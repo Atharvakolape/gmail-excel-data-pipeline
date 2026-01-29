@@ -1,0 +1,19 @@
+Power Query Steps
+
+1. Get Data → From Web
+2. Enter: YOUR_WEB_APP_URL?token=YOUR_SECRET_TOKEN
+3. Convert JSON list to table
+4. Expand columns
+5. Filter Rows
+6. Add custom column:
+
+Binary.FromText([Binary], BinaryEncoding.Base64)
+
+7. Convert Binary to Table
+
+Excel.Workbook([Custom],true)
+
+8. Expand Table Data
+9. Set data types
+10. Load to Excel
+11. Refresh for live updates
